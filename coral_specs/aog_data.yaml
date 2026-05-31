@@ -7,7 +7,7 @@ tables:
     description: "Codex data"
     format: "jsonl"
     source:
-      location: "../mock_data/"
+      location: "./mock_data/"
       glob: "codex.jsonl"
     columns:
       - name: fault_code
@@ -25,7 +25,7 @@ tables:
     description: "Inventory data"
     format: "jsonl"
     source:
-      location: "../mock_data/"
+      location: "./mock_data/"
       glob: "inventory.jsonl"
     columns:
       - name: part_id
@@ -43,7 +43,7 @@ tables:
     description: "Fleet data"
     format: "jsonl"
     source:
-      location: "../mock_data/"
+      location: "./mock_data/"
       glob: "fleet.jsonl"
     columns:
       - name: tail_number
@@ -61,7 +61,7 @@ tables:
     description: "Downstream connecting flight schedules"
     format: "jsonl"
     source:
-      location: "../mock_data/"
+      location: "./mock_data/"
       glob: "flight_schedule.jsonl"
     columns:
       - name: flight_num
@@ -79,7 +79,7 @@ tables:
     description: "Flight crew duty hours and FTL compliance"
     format: "jsonl"
     source:
-      location: "../mock_data/"
+      location: "./mock_data/"
       glob: "crew_registry.jsonl"
     columns:
       - name: tail_number

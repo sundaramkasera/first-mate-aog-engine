@@ -16,7 +16,9 @@ def install_coral():
         # Cloud Fix: Use $HOME instead of ~ for Linux terminal compatibility
         os.system("cp $HOME/.local/bin/coral ./coral")
         os.system("chmod +x ./coral")
-
+        # CRITICAL MISSING LINK: Tell the cloud server to register the database!
+        os.system("./coral onboard coral_specs/aog_data.yaml")
+        
 install_coral()
 
 # Enterprise Page Config
