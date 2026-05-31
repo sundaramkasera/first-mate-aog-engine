@@ -8,20 +8,37 @@ from gtts import gTTS
 from streamlit_agraph import agraph, Node, Edge, Config
 from agent_core.orchestrator import mitigate_aog
 
-# Hackathon Trick: Install Coral CLI on the Streamlit Linux server
+# Hackathon Trick: Dynamic Cloud Pathing & Coral CLI Installation
 @st.cache_resource
-def install_coral():
+def initialize_coral_database():
+    # 1. Install Coral if missing on the Linux container
     if not os.path.exists("./coral") and not os.path.exists("./coral.exe"):
         os.system("curl -fsSL https://withcoral.com/install.sh | sh")
-        # Cloud Fix: Use $HOME instead of ~ for Linux terminal compatibility
         os.system("cp $HOME/.local/bin/coral ./coral")
         os.system("chmod +x ./coral")
         
-        # The correct Coral CLI command to register a custom schema
-        os.system("./coral source add --file coral_specs/aog_data.yaml")
+    # 2. Dynamic Absolute Pathing for Cloud Compatibility
+    yaml_path = "coral_specs/aog_data.yaml"
+    if os.path.exists(yaml_path):
+        with open(yaml_path, 'r') as file:
+            yaml_data = file.read()
+        
+        # Dynamically generate the absolute file URL for Streamlit Cloud
+        # This translates to something like: file:///mount/src/your-repo/mock_data/
+        absolute_mock_data_path = f"file://{os.getcwd()}/mock_data/"
+        
+        # Replace relative paths with the bulletproof absolute URL
+        yaml_data = yaml_data.replace('./mock_data/', absolute_mock_data_path)
+        yaml_data = yaml_data.replace('../mock_data/', absolute_mock_data_path)
+        
+        with open(yaml_path, 'w') as file:
+            file.write(yaml_data)
+            
+    # 3. Register the schema with the newly secured absolute paths
+    os.system("./coral source add --file coral_specs/aog_data.yaml")
 
 # Execute it
-install_coral()
+initialize_coral_database()
 
 # Enterprise Page Config
 st.set_page_config(page_title="First Mate | AOG Command", page_icon="✈️", layout="wide", initial_sidebar_state="expanded")
