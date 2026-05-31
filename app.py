@@ -9,7 +9,7 @@ from streamlit_agraph import agraph, Node, Edge, Config
 from agent_core.orchestrator import mitigate_aog
 
 # Hackathon Trick: Install Coral CLI on the Streamlit Linux server
-# DO NOT USE @st.cache_resource here! The cloud needs this to run dynamically.
+@st.cache_resource
 def install_coral():
     if not os.path.exists("./coral") and not os.path.exists("./coral.exe"):
         os.system("curl -fsSL https://withcoral.com/install.sh | sh")
@@ -17,9 +17,8 @@ def install_coral():
         os.system("cp $HOME/.local/bin/coral ./coral")
         os.system("chmod +x ./coral")
         
-    # CRITICAL: This sits outside the 'if' block.
-    # It takes 1ms to run and guarantees the cloud server never forgets your database!
-    os.system("./coral onboard coral_specs/aog_data.yaml")
+        # The correct Coral CLI command to register a custom schema
+        os.system("./coral source add --file coral_specs/aog_data.yaml")
 
 # Execute it
 install_coral()
