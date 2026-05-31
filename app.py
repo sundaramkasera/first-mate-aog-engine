@@ -13,8 +13,8 @@ from agent_core.orchestrator import mitigate_aog
 def install_coral():
     if not os.path.exists("./coral") and not os.path.exists("./coral.exe"):
         os.system("curl -fsSL https://withcoral.com/install.sh | sh")
-        # Pull the binary from the hidden Linux folder into our app folder
-        os.system("cp ~/.local/bin/coral ./coral")
+        # Cloud Fix: Use $HOME instead of ~ for Linux terminal compatibility
+        os.system("cp $HOME/.local/bin/coral ./coral")
         os.system("chmod +x ./coral")
 
 install_coral()
