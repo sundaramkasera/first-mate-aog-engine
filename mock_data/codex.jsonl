@@ -1,0 +1,10 @@
+{"fault_code": "ERR-772", "system": "Turbine", "required_part": "HPT-BLADE-99X", "compliance_action": "Replace HP Turbine Blade", "estimated_repair_hours": 12}
+{"fault_code": "ERR-101", "system": "Hydraulics", "required_part": "HYD-PUMP-X1", "compliance_action": "Swap Main Hydraulic Pump", "estimated_repair_hours": 6}
+{"fault_code": "ERR-404", "system": "Avionics", "required_part": "ADC-UNIT-4B", "compliance_action": "Recalibrate Air Data Computer", "estimated_repair_hours": 4}
+{"fault_code": "ERR-909", "system": "Landing Gear", "required_part": "LGR-STRUT-A3", "compliance_action": "Replace Main Gear Strut", "estimated_repair_hours": 18}
+{"fault_code": "ERR-555", "system": "APU", "required_part": "APU-GEN-7", "compliance_action": "Replace APU Generator", "estimated_repair_hours": 8}
+{"fault_code": "ERR-333", "system": "Fuel System", "required_part": "ENG-VALVE-V2", "compliance_action": "Swap Fuel Isolation Valve", "estimated_repair_hours": 5}
+{"fault_code": "ERR-808", "system": "Fire Suppression", "required_part": "FIRE-EXT-SYS", "compliance_action": "Replace Extinguisher Bottle", "estimated_repair_hours": 4}
+{"fault_code": "ERR-415", "system": "Pneumatics", "required_part": "OUTFLOW-VALVE", "compliance_action": "Replace Cabin Outflow Valve", "estimated_repair_hours": 14}
+{"fault_code": "ERR-600", "system": "Avionics", "required_part": "RADAR-DOME-TX", "compliance_action": "Swap Weather Radar Transceiver", "estimated_repair_hours": 3}
+{"fault_code": "ERR-250", "system": "Landing Gear", "required_part": "BRK-ASSY-MAIN", "compliance_action": "Replace Main Brake Assembly", "estimated_repair_hours": 6}

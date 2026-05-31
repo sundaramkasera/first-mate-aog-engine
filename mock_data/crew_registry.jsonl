@@ -1,0 +1,6 @@
+{"tail_number": "VT-801ZA", "captain": "Capt. Sharma", "hours_on_duty": 4.5, "max_ftl": 14.0, "status": "ACTIVE"}
+{"tail_number": "VT-945ZA", "captain": "Capt. Singh", "hours_on_duty": 13.0, "max_ftl": 14.0, "status": "CRITICAL"}
+{"tail_number": "VT-112BOM", "captain": "Capt. Patel", "hours_on_duty": 2.0, "max_ftl": 14.0, "status": "ACTIVE"}
+{"tail_number": "VT-888BLR", "captain": "Capt. Reddy", "hours_on_duty": 11.5, "max_ftl": 14.0, "status": "WARNING"}
+{"tail_number": "VT-999HYD", "captain": "Capt. Menon", "hours_on_duty": 5.0, "max_ftl": 14.0, "status": "ACTIVE"}
+{"tail_number": "VT-777AMD", "captain": "Capt. Desai", "hours_on_duty": 13.5, "max_ftl": 14.0, "status": "CRITICAL"}

@@ -1,0 +1,9 @@
+{"flight_num": "AI-101", "origin": "DEL", "dest": "LHR", "pax": 312, "scheduled_dep": "14:00"}
+{"flight_num": "AI-102", "origin": "DEL", "dest": "JFK", "pax": 288, "scheduled_dep": "15:30"}
+{"flight_num": "AI-103", "origin": "DEL", "dest": "DXB", "pax": 150, "scheduled_dep": "16:15"}
+{"flight_num": "AI-201", "origin": "BOM", "dest": "SIN", "pax": 290, "scheduled_dep": "18:00"}
+{"flight_num": "AI-202", "origin": "BOM", "dest": "FRA", "pax": 340, "scheduled_dep": "19:45"}
+{"flight_num": "AI-301", "origin": "BLR", "dest": "SFO", "pax": 275, "scheduled_dep": "21:00"}
+{"flight_num": "AI-401", "origin": "COK", "dest": "DOH", "pax": 165, "scheduled_dep": "10:15"}
+{"flight_num": "AI-501", "origin": "HYD", "dest": "ORD", "pax": 298, "scheduled_dep": "23:30"}
+{"flight_num": "AI-601", "origin": "AMD", "dest": "LHR", "pax": 245, "scheduled_dep": "08:45"}

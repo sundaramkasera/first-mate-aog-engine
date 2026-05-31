@@ -1,0 +1,94 @@
+name: aog_data
+version: 0.1.0
+dsl_version: 3
+backend: file
+tables:
+  - name: codex
+    description: "Codex data"
+    format: "jsonl"
+    source:
+      location: file:///c:/Users/Shivam Kasera/first-mate-aog/mock_data/
+      glob: "codex.jsonl"
+    columns:
+      - name: fault_code
+        type: Utf8
+      - name: system
+        type: Utf8
+      - name: required_part
+        type: Utf8
+      - name: compliance_action
+        type: Utf8
+      - name: estimated_repair_hours
+        type: Int64
+
+  - name: inventory
+    description: "Inventory data"
+    format: "jsonl"
+    source:
+      location: file:///c:/Users/Shivam Kasera/first-mate-aog/mock_data/
+      glob: "inventory.jsonl"
+    columns:
+      - name: part_id
+        type: Utf8
+      - name: station
+        type: Utf8
+      - name: available_stock
+        type: Int64
+      - name: replenishment_days
+        type: Int64
+      - name: bin_location
+        type: Utf8
+
+  - name: fleet
+    description: "Fleet data"
+    format: "jsonl"
+    source:
+      location: file:///c:/Users/Shivam Kasera/first-mate-aog/mock_data/
+      glob: "fleet.jsonl"
+    columns:
+      - name: tail_number
+        type: Utf8
+      - name: airframe
+        type: Utf8
+      - name: current_location
+        type: Utf8
+      - name: status
+        type: Utf8
+      - name: crew_on_duty
+        type: Boolean
+
+  - name: flight_schedule
+    description: "Downstream connecting flight schedules"
+    format: "jsonl"
+    source:
+      location: file:///c:/Users/Shivam Kasera/first-mate-aog/mock_data/
+      glob: "flight_schedule.jsonl"
+    columns:
+      - name: flight_num
+        type: Utf8
+      - name: origin
+        type: Utf8
+      - name: dest
+        type: Utf8
+      - name: pax
+        type: Int64
+      - name: scheduled_dep
+        type: Utf8
+
+  - name: crew_registry
+    description: "Flight crew duty hours and FTL compliance"
+    format: "jsonl"
+    source:
+      location: file:///c:/Users/Shivam Kasera/first-mate-aog/mock_data/
+      glob: "crew_registry.jsonl"
+    columns:
+      - name: tail_number
+        type: Utf8
+      - name: captain
+        type: Utf8
+      - name: hours_on_duty
+        type: Float64
+      - name: max_ftl
+        type: Float64
+      - name: status
+        type: Utf8

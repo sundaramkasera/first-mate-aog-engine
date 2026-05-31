@@ -1,0 +1,11 @@
+{"part_id": "HPT-BLADE-99X", "station": "DEL", "available_stock": 0, "replenishment_days": 3, "bin_location": "A-12"}
+{"part_id": "HPT-BLADE-99X", "station": "BLR", "available_stock": 1, "replenishment_days": 0, "bin_location": "A-14"}
+{"part_id": "ADC-UNIT-4B", "station": "DEL", "available_stock": 2, "replenishment_days": 0, "bin_location": "B-04"}
+{"part_id": "ADC-UNIT-4B", "station": "AMD", "available_stock": 0, "replenishment_days": 4, "bin_location": "B-09"}
+{"part_id": "HYD-PUMP-X1", "station": "BOM", "available_stock": 0, "replenishment_days": 2, "bin_location": "C-99"}
+{"part_id": "HYD-PUMP-X1", "station": "HYD", "available_stock": 3, "replenishment_days": 0, "bin_location": "C-01"}
+{"part_id": "APU-GEN-7", "station": "BLR", "available_stock": 1, "replenishment_days": 0, "bin_location": "D-11"}
+{"part_id": "LGR-STRUT-A3", "station": "DEL", "available_stock": 0, "replenishment_days": 5, "bin_location": "EXT-REQ"}
+{"part_id": "LGR-STRUT-A3", "station": "HYD", "available_stock": 1, "replenishment_days": 0, "bin_location": "E-55"}
+{"part_id": "ENG-VALVE-V2", "station": "BOM", "available_stock": 5, "replenishment_days": 0, "bin_location": "F-22"}
+{"part_id": "ENG-VALVE-V2", "station": "COK", "available_stock": 0, "replenishment_days": 2, "bin_location": "F-24"}

@@ -1,0 +1,12 @@
+{"tail_number": "VT-772ZA", "airframe": "B777-300ER", "current_location": "DEL", "status": "AOG", "crew_on_duty": false}
+{"tail_number": "VT-801ZA", "airframe": "B777-300ER", "current_location": "DEL", "status": "IDLE", "crew_on_duty": true}
+{"tail_number": "VT-945ZA", "airframe": "B737-800", "current_location": "DEL", "status": "IDLE", "crew_on_duty": true}
+{"tail_number": "VT-334FRA", "airframe": "A350-900", "current_location": "BOM", "status": "IN_FLIGHT", "crew_on_duty": true}
+{"tail_number": "VT-112BOM", "airframe": "A320-200", "current_location": "BOM", "status": "IDLE", "crew_on_duty": true}
+{"tail_number": "VT-556CDG", "airframe": "B777-300ER", "current_location": "BLR", "status": "MAINTENANCE", "crew_on_duty": false}
+{"tail_number": "VT-888BLR", "airframe": "B787-9", "current_location": "BLR", "status": "IDLE", "crew_on_duty": true}
+{"tail_number": "VT-999HYD", "airframe": "B777-300ER", "current_location": "HYD", "status": "IDLE", "crew_on_duty": true}
+{"tail_number": "VT-444COK", "airframe": "A320-200", "current_location": "HYD", "status": "IN_FLIGHT", "crew_on_duty": false}
+{"tail_number": "VT-777AMD", "airframe": "A350-900", "current_location": "AMD", "status": "IDLE", "crew_on_duty": true}
+{"tail_number": "VT-555COK", "airframe": "B737-800", "current_location": "COK", "status": "MAINTENANCE", "crew_on_duty": false}
+{"tail_number": "VT-990LHR", "airframe": "B777-300ER", "current_location": "DEL", "status": "IN_FLIGHT", "crew_on_duty": true}

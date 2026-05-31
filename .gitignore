@@ -1,0 +1,23 @@
+# API Keys and Secrets (CRITICAL)
+.env
+.streamlit/secrets.toml
+keys.json
+
+# Virtual Environments
+venv/
+env/
+.venv/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Database Caches
+.cache.sqlite
+
+# Coral Binaries
+coral
+coral.exe
+
+# OS Files
+.DS_Store
